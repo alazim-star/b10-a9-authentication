@@ -19,7 +19,7 @@ fetch('/japanese_data.json')
 
     return (
 
-<div className=" mt-32 container border  mx-auto ">
+<div className=" mt-5 container border p-5  mx-auto ">
 
 
         

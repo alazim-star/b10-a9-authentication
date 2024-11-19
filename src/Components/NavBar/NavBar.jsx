@@ -26,7 +26,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className="bg-[#23085a]">
+    <div className="bg-gradient-to-l from-pink-800 to-[#23085a]">
       {/* Navbar */}
       <div className="navbar container mx-auto text-white h-24">
         {/* Navbar Start */}
