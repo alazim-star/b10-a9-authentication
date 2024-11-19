@@ -7,7 +7,6 @@ import MainLayOut from './Components/MainLayout/MainLayOut';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Profile from './Pages/Profile';
-import StartLearning from './Pages/StartLearning';
 import Tutorials from './Pages/Tutorials';
 import ErrorPage from './../ErrorPage.jsx/ErrorPage';
 import ViewDetails from './Components/cards/ViewDetails';
@@ -15,15 +14,11 @@ import Login from './Components/Login/Login';
 import AuthProvider from './Components/AuthProvider';
 import Register from './Components/Register/Register';
 import PrivateRoute from './Components/PrivateRoute';
-
-
-
-
-
-
-
-
-
+import StartLearning from './Components/StartLearning/StartLearning';
+import Lesson1 from './Components/StartLearning/LessonAll/Lesson1';
+import Lesson2 from './Components/StartLearning/LessonAll/Lesson2';
+import Lesson3 from './Components/StartLearning/LessonAll/Lesson3';
+import LessonsCard from './Components/LessonsPage/LessonsCard';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        
-         
+       
             
       },
       {
@@ -52,10 +46,14 @@ const router = createBrowserRouter([
         path: "/learning",
         element: <StartLearning></StartLearning>,
         
+         
+        
       },
       {
         path: "/tutorials",
-        element: <Tutorials></Tutorials>,
+        element: <PrivateRoute>
+          <Tutorials></Tutorials>
+        </PrivateRoute>,
         
       },
       {
@@ -84,9 +82,41 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
      
+      {
+        path: "/lesson1",
+        element: <PrivateRoute><Lesson1></Lesson1>
+        </PrivateRoute>,
+        
+      },
+      {
+        path: "/lesson2",
+        element: <PrivateRoute><Lesson2></Lesson2>
+        </PrivateRoute>,
+        
+      },
+      {
+        path: "/lesson3",
+        element: <PrivateRoute><Lesson3></Lesson3>
+        </PrivateRoute>,
+        
+      },
      
-    ]
+      {
+        path: "/lessons",
+        element: <PrivateRoute>
+          <LessonsCard></LessonsCard>
+        </PrivateRoute>,
+      },
+   
+   
+  
+    
+     
+     
+    ],
+    
   },
+ 
 ]);
 
 

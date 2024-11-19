@@ -15,6 +15,7 @@ import Header from '../Components/Header';
 import Progress from '../Components/Progress';
 import HeaderSecond from '../Components/HeaderSecond';
 import OurTeacher from '../Components/OurTeacher';
+import AboutLearning from '../Components/AboutLearning';
 
 
 
@@ -51,6 +52,7 @@ const Home = () => {
        
       <ChooseLearn></ChooseLearn>
       <OurTeacher></OurTeacher>
+      <AboutLearning></AboutLearning>
 
            
            <Accordion></Accordion>

@@ -22,6 +22,11 @@ const NavBar = () => {
       <li><NavLink to="/tutorials" className="hover:text-red-400">Tutorials</NavLink></li>
       <li><NavLink to="/about" className="hover:text-red-400">About</NavLink></li>
       <li><NavLink to="/profile" className="hover:text-red-400">Profile</NavLink></li>
+{
+  user && <>
+        <li><NavLink to="/lessons" className="hover:text-red-400">Lessons</NavLink></li>
+  </>
+}
     </>
   );
 

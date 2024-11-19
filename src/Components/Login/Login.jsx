@@ -1,6 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider';
+import { getAuth,sendPasswordResetEmail } from 'firebase/auth';
 
 
 const Login = () => {
@@ -9,7 +10,8 @@ const Login = () => {
     const [error, setError] = useState("");
     const navigate = useNavigate();
     const { signInUser } = useContext(AuthContext);
-
+    const emailRef=useRef()
+    const auth = getAuth()
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -29,6 +31,21 @@ const Login = () => {
                 setError(error.message); // Set error message
             });
     };
+// forget password 
+
+    const handleForgetPassword=()=>{
+        console.log('get me email',emailRef.current.value);
+        const email=emailRef.current.value
+        if(!email){
+            console.log("Please provide a valid email address");
+        }else{
+            sendPasswordResetEmail(auth,email)
+            .then(()=>{
+                alert('Password reset email sent,Please check your email')
+            })
+        }
+      
+    }
 
     return (
         <div className="flex items-center min-h-screen justify-center">
@@ -44,6 +61,7 @@ const Login = () => {
                         </label>
                         <input
                             name="email"
+                            ref={emailRef}
                             type="email"
                             placeholder="Enter your email"
                             className="input input-bordered"
@@ -71,8 +89,8 @@ const Login = () => {
 
 
 
-                        <label className="label">
-                            <Link to="/auth/forgot-password" className="label-text-alt link link-hover">
+                        <label onClick={handleForgetPassword} className="label">
+                            <Link to="" className="label-text-alt link link-hover">
                                 Forgot password?
                             </Link>
                         </label>
