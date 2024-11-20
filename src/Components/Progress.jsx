@@ -5,9 +5,9 @@ const Progress = () => {
     return ( 
 
     <div>
-        <div className='flex  bg-[#23085a] items-center justify-center gap-20 '>
-            <h3 className='animate__animated animate__backInUp text-white  text-5xl ml-10 font-extrabold cursor-pointer'>The best way to <br /> <span className='text-pink-500'>learn a language</span></h3>
-            <div className="stats stats-vertical shadow w-96 text-center">
+        <div className='lg:flex md:flex bg-[#23085a] items-center justify-center lg:gap-20 md:gap-5 '>
+            <h3 className='animate__animated animate__backInUp text-white mt-10 mb-10 text-5xl ml-10 font-extrabold cursor-pointer'>The best way to <br /> <span className='text-pink-500'>learn a language</span></h3>
+            <div className="stats stats-vertical shadow lg:w-96 md:w-full w-80 ml-20 mb-20 md:ml-5 text-center lg:mt-10">
   <div className="stat ">
     <div className="stat-title">Our User</div>
     <div className="stat-value">31M</div>

@@ -19,14 +19,14 @@ fetch('/japanese_data.json')
 
     return (
 
-<div className=" mt-5 container   mx-auto ">
+<div className="lg:mt-5 container mx-auto ">
 
 
         
           
        
        
-        <div className=" grid grid-cols-8">
+        <div className=" grid lg:grid-cols-8 md:grid-cols-5 grid-cols-4">
         {
     products.map(product=><Card key={product.id} product={product}>
 

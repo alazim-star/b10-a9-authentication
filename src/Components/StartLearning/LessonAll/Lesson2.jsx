@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Lesson2 = () => {
     return (
@@ -24,7 +25,7 @@ const Lesson2 = () => {
             <img className='w-1/2' src="https://i.ibb.co.com/S3zkvqY/Table-katakana-svg.png" alt="" />
 
 
-
+            <Link to="/learning"><button className='btn btn-primary ml-80 mt-20 mb-10'>Previous Page </button> </Link>
 
 
           </div>

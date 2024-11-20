@@ -5,7 +5,7 @@ const LearningCard = () => {
     return (
         <div>
             
-<div className='grid grid-cols-3 container mx-auto'>
+<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 container mx-auto'>
 
 
 <div className="card bg-base-100 w-96 shadow-xl">

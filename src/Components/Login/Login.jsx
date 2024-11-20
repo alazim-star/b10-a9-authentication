@@ -43,7 +43,7 @@ const Login = () => {
                 });
             });
     };
-
+// forgot password 
     const handleForgetPassword = () => {
         const email = emailRef.current.value;
         if (!email) {
@@ -52,6 +52,7 @@ const Login = () => {
                 autoClose: 3000,
             });
         } else {
+            console.log(email);
             sendPasswordResetEmail(auth, email)
                 .then(() => {
                     toast.success("Password reset email sent! Please check your inbox.", {

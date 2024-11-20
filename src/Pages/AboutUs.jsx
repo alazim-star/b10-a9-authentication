@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUsPage = () => {
+const AboutUs= () => {
   return (
     <div className="bg-gray-900 text-white">
       {/* Hero Section */}
@@ -122,4 +122,4 @@ const AboutUsPage = () => {
   );
 };
 
-export default AboutUsPage;
+export default AboutUs;

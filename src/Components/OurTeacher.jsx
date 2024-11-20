@@ -4,9 +4,9 @@ const OurTeacher = () => {
     return (
         <div className='container mx-auto mt-10'>
             <div>
-                <h3 className='mb-10 text-5xl font-bold  text-[#23085a] text-center'>Meet our expert  <span className='text-purple-600'>teachers</span></h3>
+                <h3 className='mb-10 text-5xl  font-bold  text-[#23085a] text-center'>Meet Our Expert  <span className='text-purple-600'>Teachers</span></h3>
             </div>
-            <div className='grid grid-cols-3 animate__animated animate__backInRight'>
+            <div className='grid lg:grid-cols-3 gap-10 animate__animated animate__backInRight'>
             <div className="card bg-base-100 w-96 h-full shadow-xl relative">
   <figure >
     <img

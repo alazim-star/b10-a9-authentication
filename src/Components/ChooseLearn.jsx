@@ -5,7 +5,7 @@ const ChooseLearn = () => {
 
 <div>
     <h2 className="  mt-10  mb-10 text-[#23085a] text-center text-4xl font-bold">Choose your learning preference</h2>
-    <div className="text-[#23085a] container mx-auto grid grid-cols-3">
+    <div className="text-[#23085a] container mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-10">
        
     <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
       <div className="relative">
@@ -37,7 +37,7 @@ const ChooseLearn = () => {
             Win 50% money or class credits back
           </li>
         </ul>
-        <button className="mt-4 w-full btn btn-outline btn-primary">
+        <button className="mt-4 w-full btn text-white bg-[#23085a] btn-primary">
           More about Sprint
         </button>
       </div>
@@ -74,7 +74,7 @@ const ChooseLearn = () => {
             Win 50% money or class credits back
           </li>
         </ul>
-        <button className="mt-4 w-full btn btn-outline btn-primary">
+        <button className="mt-4 w-full btn text-white bg-[#23085a] btn-primary">
           More about Flex
         </button>
       </div>
@@ -111,7 +111,7 @@ const ChooseLearn = () => {
             Win 50% money or class credits back
           </li>
         </ul>
-        <button className="mt-4 w-full btn btn-outline btn-primary">
+        <button className="mt-4 w-full btn text-white bg-[#23085a] btn-primary">
           More about Teams
         </button>
       </div>

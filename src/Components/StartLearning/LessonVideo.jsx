@@ -5,12 +5,12 @@ const LessonVideo = () => {
     return (
         <div>
          <div className='mt-10 mb-10 text-center'>
-             <h1 className='text-5xl font-bold text-[#23085a]'>Why learn Japanese  online with us? </h1>
+             <h1 className='lg:text-5xl text-3xl font-bold text-[#23085a]'>Why learn Japanese  online with us? </h1>
           <p className='text-[#23085a] mt-5'>It helps to explore lessening and build capability to catch language </p>
 </div>
            
 
-<div className='grid grid-cols-3 container mx-auto'>
+<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-10 container mx-auto'>
 
 
 <div className="card bg-base-100 w-96 shadow-xl ">

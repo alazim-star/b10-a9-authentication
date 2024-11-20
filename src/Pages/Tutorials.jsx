@@ -5,10 +5,10 @@ const Tutorials = () => {
     return (
        
             <div className='mt-10 mb-10 text-center'>
-             <h1 className='text-5xl font-bold text-[#23085a]'>Our Tutorials will helps you <br /> to learn Japanese Vocabulary </h1>
+             <h1 className='lg:text-5xl text-3xl font-bold text-[#23085a]'>Our Tutorials will helps you <br /> to learn Japanese Vocabulary </h1>
           <p className='text-[#23085a] mt-5'>It helps to explore lessening and build capability and thinking Vocabulary </p>
           <div className="divider divider-primary"></div>   
-<div className='grid grid-cols-3 mt-10 mb-10 container mx-auto'>
+<div className='grid lg:grid-cols-3 mt-10 gap-10 mb-10 container mx-auto'>
 <div className="card card-compact bg-base-100 w-96 shadow-xl">
   <figure>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/OOEgU9RQRPI?si=ruPtus0yzKN-eKJV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
