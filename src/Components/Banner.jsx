@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -10,12 +11,12 @@ const Banner = () => {
   style={{
     backgroundImage: "url(https://i.ibb.co.com/KqTPwg8/pexels-max-fischer-5212703.jpg)",
   }}>
-  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-overlay bg-opacity-"></div>
   <div className="hero-content mb-32 mr-96 text-neutral-content text-center">
     <div className="">
       <h1 className="mb-5 text-5xl font-bold">Achieve your language goal together with a dedicated team</h1>
       
-      <button className="btn mt-32 bg-[#23085a] text-white">Get Started</button>
+      <Link to="/learning"><button className="btn-primary mt-32 btn text-white">Get Started</button></Link>
     </div>
   </div>
 </div>
@@ -67,25 +68,6 @@ const Banner = () => {
         </div>
       </div>
     </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
  

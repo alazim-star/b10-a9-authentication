@@ -36,7 +36,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-[#23085a] p-4 rounded-lg shadow-md mt-20">
+    <div className="bg-[#23085a] p-4 rounded-lg shadow-md mt-20 animate__animated animate__backInRight">
       <div className="flex items-center justify-between space-x-4">
         {languages.map((language, index) => (
           <div

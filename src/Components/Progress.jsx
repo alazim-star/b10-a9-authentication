@@ -1,11 +1,12 @@
 import React from 'react';
 import moment from 'moment';
+import 'animate.css';
 const Progress = () => {
     return ( 
 
     <div>
-        <div className='flex bg-[#23085a] items-center justify-center gap-20 '>
-            <h3 className='text-white  text-5xl ml-10 font-extrabold'>The best way to <br /> <span className='text-pink-500'>learn a language</span></h3>
+        <div className='flex  bg-[#23085a] items-center justify-center gap-20 '>
+            <h3 className='animate__animated animate__backInUp text-white  text-5xl ml-10 font-extrabold cursor-pointer'>The best way to <br /> <span className='text-pink-500'>learn a language</span></h3>
             <div className="stats stats-vertical shadow w-96 text-center">
   <div className="stat ">
     <div className="stat-title">Our User</div>

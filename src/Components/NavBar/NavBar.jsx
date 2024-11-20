@@ -17,16 +17,18 @@ const NavBar = () => {
 
   const links = (
     <>
-      <li><NavLink to="/" className="hover:text-red-400">Home</NavLink></li>
-      <li><NavLink to="/learning" className="hover:text-red-400">Start Learning</NavLink></li>
-      <li><NavLink to="/tutorials" className="hover:text-red-400">Tutorials</NavLink></li>
-      <li><NavLink to="/about" className="hover:text-red-400">About</NavLink></li>
-      <li><NavLink to="/profile" className="hover:text-red-400">Profile</NavLink></li>
-{
-  user && <>
-        <li><NavLink to="/lessons" className="hover:text-red-400">Lessons</NavLink></li>
-  </>
-}
+<a href=""><NavLink to="/" className="hover:text-yellow-400 p-3 rounded ">Home</NavLink></a>
+      <a><NavLink to="/learning" className="hover:text-yellow-400 rounded p-3">Start Learning</NavLink></a>
+      <a><NavLink to="/tutorials" className="hover:text-yellow-400 rounded p-3">Tutorials</NavLink></a>
+      {user && (
+        <>
+          <a><NavLink to="/lessons" className="hover:text-yellow-400 rounded p-3">Lessons</NavLink></a>
+          <a><NavLink to="/profile" className="hover:text-yellow-400 rounded p-3">Profile</NavLink></a>
+        </>
+      )}
+      <a><NavLink to="/about" className="hover:text-yellow-400 rounded p-3">About</NavLink></a>
+      
+      
     </>
   );
 
@@ -78,24 +80,33 @@ const NavBar = () => {
 
         {/* Navbar End */}
         <div className="navbar-end flex items-center space-x-4">
-          {/* Welcome Message */}
+          {/* User Info */}
           {user && (
-            <p className="text-sm lg:text-md text-white">
-              Welcome, <span className="font-bold">{user.email || ""} for learning </span>
-            </p>
+            <div className="flex items-center space-x-2">
+              {user.photoURL && (
+                <img
+                  src={user.photoURL}
+                  alt="User Profile"
+                  className="w-10 h-10 rounded-full border border-white"
+                />
+              )}
+              <p className="text-sm lg:text-md text-white">
+                Welcome, <span className="font-bold">{user.email || "User"}</span>
+              </p>
+            </div>
           )}
 
           {/* Auth Buttons */}
           {user ? (
             <button
               onClick={handleSignOut}
-              className="btn btn-neutral rounded-md text-white">
+              className="btn  btn-primary bg-[#23085a]   rounded-md text-white">
               Sign Out
             </button>
           ) : (
             <Link
               to="/login"
-              className="btn btn-neutral rounded-md text-white">
+              className="btn btn-primary bg-[#23085a] rounded-md text-white">
               Login
             </Link>
           )}

@@ -19,6 +19,7 @@ import Lesson1 from './Components/StartLearning/LessonAll/Lesson1';
 import Lesson2 from './Components/StartLearning/LessonAll/Lesson2';
 import Lesson3 from './Components/StartLearning/LessonAll/Lesson3';
 import LessonsCard from './Components/LessonsPage/LessonsCard';
+import UpdateProfile from './Components/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>,
+        element: <PrivateRoute>
+          <Profile></Profile>
+        </PrivateRoute>,
         
       },
        {
@@ -108,7 +111,10 @@ const router = createBrowserRouter([
         </PrivateRoute>,
       },
    
-   
+      {
+        path: "/updateProfile",
+        element: <UpdateProfile></UpdateProfile>,
+      },
   
     
      
