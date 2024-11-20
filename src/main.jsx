@@ -5,7 +5,6 @@ import './index.css'
 import {createBrowserRouter,Navigate,RouterProvider,} from "react-router-dom";
 import MainLayOut from './Components/MainLayout/MainLayOut';
 import Home from './Pages/Home';
-import About from './Pages/About';
 import Profile from './Pages/Profile';
 import Tutorials from './Pages/Tutorials';
 import ErrorPage from './../ErrorPage.jsx/ErrorPage';
@@ -20,6 +19,7 @@ import Lesson2 from './Components/StartLearning/LessonAll/Lesson2';
 import Lesson3 from './Components/StartLearning/LessonAll/Lesson3';
 import LessonsCard from './Components/LessonsPage/LessonsCard';
 import UpdateProfile from './Components/UpdateProfile';
+import AboutUs from './Pages/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       },
        {
         path: "/about",
-        element: <About></About>,
+        element: <AboutUs></AboutUs>,
         
       },
       {

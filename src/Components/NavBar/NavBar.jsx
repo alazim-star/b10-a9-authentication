@@ -26,7 +26,7 @@ const NavBar = () => {
           <a><NavLink to="/profile" className="hover:text-yellow-400 rounded p-3">Profile</NavLink></a>
         </>
       )}
-      <a><NavLink to="/about" className="hover:text-yellow-400 rounded p-3">About</NavLink></a>
+      <a><NavLink to="/about" className="hover:text-yellow-400 rounded p-3">About Us</NavLink></a>
       
       
     </>
@@ -82,7 +82,7 @@ const NavBar = () => {
         <div className="navbar-end flex items-center space-x-4">
           {/* User Info */}
           {user && (
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 mr-10">
               {user.photoURL && (
                 <img
                   src={user.photoURL}
@@ -90,9 +90,10 @@ const NavBar = () => {
                   className="w-10 h-10 rounded-full border border-white"
                 />
               )}
-              <p className="text-sm lg:text-md text-white">
-                Welcome, <span className="font-bold">{user.email || "User"}</span>
+              <p className="text-sm lg:text-md text-white ">
+                Welcome, <span className="font-bold  ">{user.email || "User"}</span>
               </p>
+             
             </div>
           )}
 

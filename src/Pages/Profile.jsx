@@ -14,7 +14,7 @@ const Profile = () => {
       </h1>
 
       {/* Profile Card */}
-      <div className="bg-purple-800  shadow-lg rounded-lg p-6 w-full max-w-md">
+      <div className="bg-[#23085a]  shadow-lg rounded-lg p-6 w-full max-w-md">
         {/* User Image */}
         <div className="flex justify-center mb-4">
           <img

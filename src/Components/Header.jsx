@@ -36,15 +36,15 @@ const Header = () => {
   ];
 
   return (
-    <div className="bg-[#23085a] p-4 rounded-lg shadow-md mt-20 animate__animated animate__backInRight">
+    <div className="bg-[#23085a] p-4 rounded-lg shadow-md  animate__animated animate__backInRight ">
       <div className="flex items-center justify-between space-x-4">
         {languages.map((language, index) => (
           <div
             key={index}
-            className="flex items-center space-x-2 p-3 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+            className="flex items-center lg:space-x-2 lg:p-3   lg:bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
           >
             <img
-              className="rounded-full w-10 h-10"
+              className="rounded-full lg:w-10 lg:h-10 hidden lg:block"
               src={language.flag}
               alt={`${language.name} flag`}
             />
