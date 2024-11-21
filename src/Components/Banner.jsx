@@ -16,7 +16,7 @@ const Banner = () => {
             alt="Slide 1"
           />
           <div className='absolute  top-48 lg:left-80 text-white'>
-            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Start <span className='text-7xl text-[#796bf0]'>Learning & </span> Define Your Future </h1>
+            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Start <span className='lg:text-7xl text-3xl text-[#796bf0]'>Learning & </span> Define Your Future </h1>
           </div>
           <div className="absolute left-2 lg:left-5 right-2 lg:right-5 top-1/2 transform -translate-y-1/2 flex justify-between">
             <a href="#slide4" className="btn btn-circle">
@@ -36,7 +36,7 @@ const Banner = () => {
             alt="Slide 2"
           />
           <div className='absolute top-48 lg:left-96 text-white'>
-            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Best Education <span className='text-7xl text-[#796bf0]'>Platform</span>For Learning</h1>
+            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Best Education <span className='lg:text-7xl text-3xl text-[#796bf0]'>Platform</span>For Learning</h1>
           </div>
           <div className="absolute left-2 lg:left-5 right-2 lg:right-5 top-1/2 transform -translate-y-1/2 flex justify-between">
             <a href="#slide1" className="btn btn-circle">
@@ -56,7 +56,7 @@ const Banner = () => {
             alt="Slide 3"
           />
           <div className='absolute top-48 lg:left-96 text-white'>
-            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Explore your <span className='text-7xl text-[#796bf0]'>Learning</span>Your Dream</h1>
+            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Explore your <span className='lg:text-7xl text-3xl text-[#796bf0]'>Learning</span>Your Dream</h1>
           </div>
           <div className="absolute left-2 lg:left-5 right-2 lg:right-5 top-1/2 transform -translate-y-1/2 flex justify-between">
             <a href="#slide2" className="btn btn-circle">
@@ -76,7 +76,7 @@ const Banner = () => {
             alt="Slide 4"
           />
             <div className='absolute top-48 lg:left-96 text-white'>
-            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Learn<span className='text-7xl text-[#796bf0]'>At</span>Your Home</h1>
+            <h1 className='lg:text-5xl text-2xl font-bold text-[#f13081]'>Learn<span className='lg:text-7xl text-3xl text-[#796bf0]'>At</span>Your Home</h1>
           </div>
           <div className="absolute left-2 lg:left-5 right-2 lg:right-5 top-1/2 transform -translate-y-1/2 flex justify-between">
             <a href="#slide3" className="btn btn-circle">

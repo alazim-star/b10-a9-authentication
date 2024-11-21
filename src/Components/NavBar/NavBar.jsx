@@ -9,7 +9,7 @@ const NavBar = () => {
   const handleSignOut = () => {
     signOutUser()
       .then(() => {
-        console.log("Sign out successfully");
+        // console.log("Sign out successfully");
       })
       .catch((error) => {
         console.error("ERROR:", error.message);
@@ -61,7 +61,7 @@ const NavBar = () => {
             </button>
             <ul
               tabIndex={0}
-              className="bg-[#23085a] menu menu-sm dropdown-content text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              className="bg-[#23085a] menu menu-sm dropdown-content text-white rounded-box z-[1] mt-3 w-52 p-5 space-y-3  shadow">
               {links}
             </ul>
           </div>

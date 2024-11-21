@@ -35,7 +35,7 @@ const UpdateProfile = () => {
           autoClose: 3000,
          
         });
-        console.log("User profile updated successfully!");
+        // console.log("User profile updated successfully!");
 
         // Redirect to profile page
         navigate("/profile");

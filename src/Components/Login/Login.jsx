@@ -23,7 +23,7 @@ const Login = () => {
 
         signInUser(email, password)
             .then((result) => {
-                console.log(result.user);
+                // console.log(result.user);
                 toast.success("Login successful!", {
                     position: "top-right",
                     autoClose: 3000,
@@ -52,7 +52,7 @@ const Login = () => {
                 autoClose: 3000,
             });
         } else {
-            console.log(email);
+            // console.log(email);
             sendPasswordResetEmail(auth, email)
                 .then(() => {
                     toast.success("Password reset email sent! Please check your inbox.", {
@@ -75,7 +75,7 @@ const Login = () => {
 const handleGoogleSignIn=()=>{
     signInWithGoogle()
     .then(result=>{
-        console.log(result.user);
+        // console.log(result.user);
         navigate('/')
     })
     .catch((error) => {

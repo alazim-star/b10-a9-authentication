@@ -27,12 +27,7 @@ const Header = () => {
       learners: "3.3k Learners",
       flag: "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
     },
-    {
-      name: "Italian",
-      learners: "NEW",
-      flag: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
-      isNew: true,
-    },
+   
   ];
 
   return (

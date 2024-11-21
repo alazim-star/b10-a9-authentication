@@ -39,7 +39,7 @@ const signOutUser=()=>{
 // for loading 
 useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth,currentUser => {
-       console.log("curent user",currentUser);
+    //    console.log("curent user",currentUser);
         setUser(currentUser);
         setLoading(false)
 
