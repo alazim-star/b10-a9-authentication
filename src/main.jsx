@@ -14,15 +14,15 @@ import AuthProvider from './Components/AuthProvider';
 import Register from './Components/Register/Register';
 import PrivateRoute from './Components/PrivateRoute';
 import StartLearning from './Components/StartLearning/StartLearning';
-import Lesson1 from './Components/StartLearning/LessonAll/Lesson1';
-import Lesson2 from './Components/StartLearning/LessonAll/Lesson2';
-import Lesson3 from './Components/StartLearning/LessonAll/Lesson3';
-import LessonsCard from './Components/LessonsPage/LessonsCard';
+
+
 import UpdateProfile from './Components/UpdateProfile';
 import AboutUs from './Pages/AboutUs';
 import CardProducts from './Components/special/CardProducts';
 import Header from './Components/Header';
 import ErrorPage from './../ErrorPage.jsx/ErrorPage';
+import ShowAllCard from './Components/StartLearning/ShowAllCard';
+import Lesson from './Components/special/Lesson';
 
 const router = createBrowserRouter([
   {
@@ -92,41 +92,18 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
-      {
-        path: "/lessons",
-        element: (
-          <PrivateRoute>
-            <LessonsCard />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/lesson1",
-        element: (
-          <PrivateRoute>
-            <Lesson1 />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/lesson2",
-        element: (
-          <PrivateRoute>
-            <Lesson2 />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/lesson3",
-        element: (
-          <PrivateRoute>
-            <Lesson3 />
-          </PrivateRoute>
-        ),
-      },
+     
       {
         path: "/updateProfile",
         element: <UpdateProfile />,
+      },
+      {
+        path: "/showAll",
+        element: <ShowAllCard/>,
+      },
+      {
+        path: "/lessons",
+        element: <Lesson/>,
       },
     ],
   },

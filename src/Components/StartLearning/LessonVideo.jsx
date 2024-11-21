@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const LessonVideo = () => {
     return (
         <div>
-         <div className='mt-10 mb-10 text-center'>
+         <div className=' mb-10 text-center'>
              <h1 className='lg:text-5xl text-3xl font-bold text-[#23085a]'>Why learn Japanese  online with us? </h1>
           <p className='text-[#23085a] mt-5'>It helps to explore lessening and build capability to catch language </p>
 </div>

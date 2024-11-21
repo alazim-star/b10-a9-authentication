@@ -1,10 +1,11 @@
 import { useLoaderData, useParams } from 'react-router-dom'
 
 import { useEffect, useState } from 'react'
+import Card from '../cards/Card'
 
-import Card from './../cards/Card';
 
-const CardProducts = ({}) => {
+
+const ShowAllCard = ({}) => {
 
   const data = useLoaderData()
   const { category } = useParams() 
@@ -34,4 +35,4 @@ const CardProducts = ({}) => {
   )
 }
 
-export default CardProducts
+export default ShowAllCard

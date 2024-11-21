@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider';
 
+
 const NavBar = () => {
   const { user, signOutUser } = useContext(AuthContext);
 
@@ -18,11 +19,12 @@ const NavBar = () => {
   const links = (
     <>
 <a href=""><NavLink to="/" className="hover:text-yellow-400 p-3 rounded ">Home</NavLink></a>
-      <a><NavLink to="/learning" className="hover:text-yellow-400 rounded p-3">Start Learning</NavLink></a>
+<a><NavLink to="/lessons" className="hover:text-yellow-400 rounded p-3">Start Learning</NavLink></a>
+     
       <a><NavLink to="/tutorials" className="hover:text-yellow-400 rounded p-3">Tutorials</NavLink></a>
       {user && (
         <>
-          <a><NavLink to="/lessons" className="hover:text-yellow-400 rounded p-3">Lessons</NavLink></a>
+           <a><NavLink to="/learning" className="hover:text-yellow-400 rounded p-3">Lessons</NavLink></a>
           <a><NavLink to="/profile" className="hover:text-yellow-400 rounded p-3">Profile</NavLink></a>
         </>
       )}
