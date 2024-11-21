@@ -1,24 +1,32 @@
 import { useEffect, useState } from "react";
-import Card from "../cards/Card";
-import LessonCard from "./LessonCard";
+
+
+
+
 
 const LessonsCard = () => {
 const [products,setProducts]=useState([])
 useEffect(()=>{
-fetch('/japanese_data.json')
+fetch('/product.json')
 .then(res=>res.json())
 .then(data=>setProducts(data))
 
+
 },[])
+
+
+
 
     return (
 
-<div className=" mt-5 container border p-5 mx-auto  ">
-     
-        <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-5 ">
+<div className=" bg-[#f7f7f7] w-full container mx-auto">
+
+
+        
+          
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ml-14 lg:ml-0">
         {
-    products.map(product=><LessonCard key={product.id} product={product}>
-    </LessonCard>)
+    products.map(product=><LessonsCard key={product.product_id} product={product}></LessonsCard>)
 }
 
 
@@ -28,4 +36,4 @@ fetch('/japanese_data.json')
     );
 };
 
-export default LessonsCard;
+export default LessonsCard 

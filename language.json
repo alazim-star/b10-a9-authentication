@@ -1,0 +1,557 @@
+[
+    {
+      "lesson_no": 1,
+      "vocabularies": [
+        {
+          "word": "こんにちは",
+          "pronunciation": "konnichiwa",
+          "meaning": "hello",
+          "part_of_speech": "greeting",
+          "difficulty": "easy",
+          "when_to_say": "When greeting someone during the day.",
+          "example": "こんにちは (konnichiwa) means hello.",
+          "id": "1"
+        },
+        {
+          "word": "さようなら",
+          "pronunciation": "sayounara",
+          "meaning": "goodbye",
+          "part_of_speech": "greeting",
+          "difficulty": "easy",
+          "when_to_say": "When bidding farewell.",
+          "example": "さようなら (sayounara) means goodbye.",
+          "id": "2"
+        },
+        {
+          "word": "ありがとう",
+          "pronunciation": "arigatou",
+          "meaning": "thank you",
+          "part_of_speech": "expression",
+          "difficulty": "easy",
+          "when_to_say": "When expressing gratitude.",
+          "example": "ありがとう (arigatou) means thank you.",
+          "id": "3"
+        },
+        {
+          "word": "すみません",
+          "pronunciation": "sumimasen",
+          "meaning": "excuse me",
+          "part_of_speech": "expression",
+          "difficulty": "medium",
+          "when_to_say": "When apologizing or catching attention.",
+          "example": "すみません (sumimasen) means excuse me or sorry.",
+          "id": "4"
+        },
+        {
+          "word": "はい",
+          "pronunciation": "hai",
+          "meaning": "yes",
+          "part_of_speech": "adverb",
+          "difficulty": "easy",
+          "when_to_say": "When affirming something.",
+          "example": "はい (hai) means yes.",
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "lesson_no": 2,
+      "vocabularies": [
+        {
+          "word": "いいえ",
+          "pronunciation": "iie",
+          "meaning": "no",
+          "part_of_speech": "adverb",
+          "difficulty": "easy",
+          "when_to_say": "When negating something.",
+          "example": "いいえ (iie) means no.",
+          "id": "6"
+        },
+        {
+          "word": "おはよう",
+          "pronunciation": "ohayou",
+          "meaning": "good morning",
+          "part_of_speech": "greeting",
+          "difficulty": "easy",
+          "when_to_say": "When greeting someone in the morning.",
+          "example": "おはよう (ohayou) means good morning.",
+          "id": "7"
+        },
+        {
+          "word": "こんばんは",
+          "pronunciation": "konbanwa",
+          "meaning": "good evening",
+          "part_of_speech": "greeting",
+          "difficulty": "easy",
+          "when_to_say": "When greeting someone in the evening.",
+          "example": "こんばんは (konbanwa) means good evening.",
+          "id": "8"
+        },
+        {
+          "word": "お願いします",
+          "pronunciation": "onegaishimasu",
+          "meaning": "please",
+          "part_of_speech": "expression",
+          "difficulty": "medium",
+          "when_to_say": "When making a polite request.",
+          "example": "お願いします (onegaishimasu) means please.",
+          "id": "9"
+        },
+        {
+          "word": "すごい",
+          "pronunciation": "sugoi",
+          "meaning": "amazing",
+          "part_of_speech": "adjective",
+          "difficulty": "easy",
+          "when_to_say": "When expressing amazement.",
+          "example": "すごい (sugoi) means amazing.",
+          "id": "10"
+        }
+      ]
+    },
+    {
+      "lesson_no": 3,
+      "vocabularies": [
+        {
+          "word": "楽しい",
+          "pronunciation": "tanoshii",
+          "meaning": "fun",
+          "part_of_speech": "adjective",
+          "difficulty": "easy",
+          "when_to_say": "When describing something enjoyable.",
+          "example": "楽しい (tanoshii) means fun.",
+          "id": "11"
+        },
+        {
+          "word": "大丈夫",
+          "pronunciation": "daijoubu",
+          "meaning": "okay",
+          "part_of_speech": "expression",
+          "difficulty": "easy",
+          "when_to_say": "When expressing reassurance.",
+          "example": "大丈夫 (daijoubu) means okay or alright.",
+          "id": "12"
+        },
+        {
+          "word": "美しい",
+          "pronunciation": "utsukushii",
+          "meaning": "beautiful",
+          "part_of_speech": "adjective",
+          "difficulty": "medium",
+          "when_to_say": "When describing something lovely.",
+          "example": "美しい (utsukushii) means beautiful.",
+          "id": "13"
+        },
+        {
+          "word": "猫",
+          "pronunciation": "neko",
+          "meaning": "cat",
+          "part_of_speech": "noun",
+          "difficulty": "easy",
+          "when_to_say": "When talking about cats.",
+          "example": "猫 (neko) means cat.",
+          "id": "14"
+        },
+        {
+          "word": "犬",
+          "pronunciation": "inu",
+          "meaning": "dog",
+          "part_of_speech": "noun",
+          "difficulty": "easy",
+          "when_to_say": "When talking about dogs.",
+          "example": "犬 (inu) means dog.",
+          "id": "15"
+        }
+      ]
+    },
+    {
+      "lesson_no": 4,
+      "vocabularies": [
+        {
+          "word": "家",
+          "pronunciation": "ie",
+          "meaning": "house",
+          "part_of_speech": "noun",
+          "difficulty": "easy",
+          "when_to_say": "When discussing homes.",
+          "example": "家 (ie) means house.",
+          "id": "16"
+        },
+        {
+          "word": "学校",
+          "pronunciation": "gakkou",
+          "meaning": "school",
+          "part_of_speech": "noun",
+          "difficulty": "easy",
+          "when_to_say": "When discussing education.",
+          "example": "学校 (gakkou) means school.",
+          "id": "17"
+        },
+        {
+          "word": "先生",
+          "pronunciation": "sensei",
+          "meaning": "teacher",
+          "part_of_speech": "noun",
+          "difficulty": "medium",
+          "when_to_say": "When referring to an instructor.",
+          "example": "先生 (sensei) means teacher.",
+          "id": "18"
+        },
+        {
+          "word": "学生",
+          "pronunciation": "gakusei",
+          "meaning": "student",
+          "part_of_speech": "noun",
+          "difficulty": "medium",
+          "when_to_say": "When discussing learners.",
+          "example": "学生 (gakusei) means student.",
+          "id": "19"
+        },
+        {
+          "word": "友達",
+          "pronunciation": "tomodachi",
+          "meaning": "friend",
+          "part_of_speech": "noun",
+          "difficulty": "easy",
+          "when_to_say": "When discussing friendships.",
+          "example": "友達 (tomodachi) means friend.",
+          "id": "20"
+        }
+      ]
+    },
+    {
+        "lesson_no": 5,
+        "vocabularies": [
+          {
+            "word": "ありがとうごさいました",
+            "pronunciation": "arigatou gozaimashita",
+            "meaning": "Thank you (past action)",
+            "part_of_speech": "expression",
+            "difficulty": "medium",
+            "when_to_say": "When expressing gratitude for something done in the past.",
+            "example": "ありがとうごさいました (arigatou gozaimashita) is polite gratitude.",
+            "id": "21"
+          },
+          {
+            "word": "本",
+            "pronunciation": "hon",
+            "meaning": "book",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When referring to a book.",
+            "example": "本 (hon) means book.",
+            "id": "22"
+          },
+          {
+            "word": "食べる",
+            "pronunciation": "taberu",
+            "meaning": "eat",
+            "part_of_speech": "verb",
+            "difficulty": "easy",
+            "when_to_say": "When discussing eating.",
+            "example": "食べる (taberu) means to eat.",
+            "id": "23"
+          },
+          {
+            "word": "行く",
+            "pronunciation": "iku",
+            "meaning": "go",
+            "part_of_speech": "verb",
+            "difficulty": "medium",
+            "when_to_say": "When talking about going somewhere.",
+            "example": "行く (iku) means to go.",
+            "id": "24"
+          },
+          {
+            "word": "見る",
+            "pronunciation": "miru",
+            "meaning": "see",
+            "part_of_speech": "verb",
+            "difficulty": "medium",
+            "when_to_say": "When discussing seeing or watching.",
+            "example": "見る (miru) means to see or watch.",
+            "id": "25"
+          }
+        ]
+      },
+      {
+        "lesson_no": 6,
+        "vocabularies": [
+          {
+            "word": "買う",
+            "pronunciation": "kau",
+            "meaning": "buy",
+            "part_of_speech": "verb",
+            "difficulty": "medium",
+            "when_to_say": "When referring to purchasing something.",
+            "example": "買う (kau) means to buy.",
+            "id": "26"
+          },
+          {
+            "word": "飲む",
+            "pronunciation": "nomu",
+            "meaning": "drink",
+            "part_of_speech": "verb",
+            "difficulty": "easy",
+            "when_to_say": "When referring to drinking.",
+            "example": "飲む (nomu) means to drink.",
+            "id": "27"
+          },
+          {
+            "word": "仕事",
+            "pronunciation": "shigoto",
+            "meaning": "work",
+            "part_of_speech": "noun",
+            "difficulty": "medium",
+            "when_to_say": "When discussing jobs or work.",
+            "example": "仕事 (shigoto) means work.",
+            "id": "28"
+          },
+          {
+            "word": "電車",
+            "pronunciation": "densha",
+            "meaning": "train",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When talking about transportation.",
+            "example": "電車 (densha) means train.",
+            "id": "29"
+          },
+          {
+            "word": "走る",
+            "pronunciation": "hashiru",
+            "meaning": "run",
+            "part_of_speech": "verb",
+            "difficulty": "medium",
+            "when_to_say": "When referring to running.",
+            "example": "走る (hashiru) means to run.",
+            "id": "30"
+          }
+        ]
+      },
+      {
+        "lesson_no": 7,
+        "vocabularies": [
+          {
+            "word": "飛ぶ",
+            "pronunciation": "tobu",
+            "meaning": "fly",
+            "part_of_speech": "verb",
+            "difficulty": "medium",
+            "when_to_say": "When referring to flying.",
+            "example": "飛ぶ (tobu) means to fly.",
+            "id": "31"
+          },
+          {
+            "word": "歌う",
+            "pronunciation": "utau",
+            "meaning": "sing",
+            "part_of_speech": "verb",
+            "difficulty": "easy",
+            "when_to_say": "When talking about singing.",
+            "example": "歌う (utau) means to sing.",
+            "id": "32"
+          },
+          {
+            "word": "食べ物",
+            "pronunciation": "tabemono",
+            "meaning": "food",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When talking about food.",
+            "example": "食べ物 (tabemono) means food.",
+            "id": "33"
+          },
+          {
+            "word": "飲み物",
+            "pronunciation": "nomimono",
+            "meaning": "drink (beverage)",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When talking about beverages.",
+            "example": "飲み物 (nomimono) means drink or beverage.",
+            "id": "34"
+          },
+          {
+            "word": "海",
+            "pronunciation": "umi",
+            "meaning": "sea",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When discussing the ocean.",
+            "example": "海 (umi) means sea.",
+            "id": "35"
+          }
+        ]
+      },
+      {
+        "lesson_no": 8,
+        "vocabularies": [
+          {
+            "word": "山",
+            "pronunciation": "yama",
+            "meaning": "mountain",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When talking about mountains.",
+            "example": "山 (yama) means mountain.",
+            "id": "36"
+          },
+          {
+            "word": "川",
+            "pronunciation": "kawa",
+            "meaning": "river",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When discussing rivers.",
+            "example": "川 (kawa) means river.",
+            "id": "37"
+          },
+          {
+            "word": "空",
+            "pronunciation": "sora",
+            "meaning": "sky",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When referring to the sky.",
+            "example": "空 (sora) means sky.",
+            "id": "38"
+          },
+          {
+            "word": "星",
+            "pronunciation": "hoshi",
+            "meaning": "star",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When talking about stars.",
+            "example": "星 (hoshi) means star.",
+            "id": "39"
+          },
+          {
+            "word": "花",
+            "pronunciation": "hana",
+            "meaning": "flower",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When discussing flowers.",
+            "example": "花 (hana) means flower.",
+            "id": "40"
+          }
+        ]
+      },
+      {
+        "lesson_no": 9,
+        "vocabularies": [
+          {
+            "word": "風",
+            "pronunciation": "kaze",
+            "meaning": "wind",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When referring to the wind.",
+            "example": "風 (kaze) means wind.",
+            "id": "41"
+          },
+          {
+            "word": "雨",
+            "pronunciation": "ame",
+            "meaning": "rain",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When discussing rain.",
+            "example": "雨 (ame) means rain.",
+            "id": "42"
+          },
+          {
+            "word": "雪",
+            "pronunciation": "yuki",
+            "meaning": "snow",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When talking about snow.",
+            "example": "雪 (yuki) means snow.",
+            "id": "43"
+          },
+          {
+            "word": "火",
+            "pronunciation": "hi",
+            "meaning": "fire",
+            "part_of_speech": "noun",
+            "difficulty": "medium",
+            "when_to_say": "When discussing fire or flames.",
+            "example": "火 (hi) means fire.",
+            "id": "44"
+          },
+          {
+            "word": "水",
+            "pronunciation": "mizu",
+            "meaning": "water",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When referring to water.",
+            "example": "水 (mizu) means water.",
+            "id": "45"
+          }
+        ]
+      },
+      {
+        "lesson_no": 10,
+        "vocabularies": [
+          {
+            "word": "電気",
+            "pronunciation": "denki",
+            "meaning": "electricity",
+            "part_of_speech": "noun",
+            "difficulty": "medium",
+            "when_to_say": "When discussing electric power.",
+            "example": "電気 (denki) means electricity.",
+            "id": "46"
+          },
+          {
+            "word": "車",
+            "pronunciation": "kuruma",
+            "meaning": "car",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When referring to vehicles.",
+            "example": "車 (kuruma) means car.",
+            "id": "47"
+          },
+          {
+            "word": "自転車",
+            "pronunciation": "jitensha",
+            "meaning": "bicycle",
+            "part_of_speech": "noun",
+            "difficulty": "medium",
+            "when_to_say": "When discussing bicycles.",
+            "example": "自転車 (jitensha) means bicycle.",
+            "id": "48"
+          },
+          {
+            "word": "飛行機",
+            "pronunciation": "hikouki",
+            "meaning": "airplane",
+            "part_of_speech": "noun",
+            "difficulty": "medium",
+            "when_to_say": "When talking about air travel.",
+            "example": "飛行機 (hikouki) means airplane.",
+            "id": "49"
+          },
+          {
+            "word": "時計",
+            "pronunciation": "tokei",
+            "meaning": "clock",
+            "part_of_speech": "noun",
+            "difficulty": "easy",
+            "when_to_say": "When referring to time or clocks.",
+            "example": "時計 (tokei) means clock.",
+            "id": "50"
+          }
+        ]
+      }
+      ]
+      
+
+ 
+ 
+  

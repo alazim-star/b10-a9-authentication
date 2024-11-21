@@ -1,5 +1,14 @@
+import { Outlet } from "react-router-dom";
+import Categories from "../special/Categories";
 import LearningCard from "./LearningCard";
 import LessonVideo from "./LessonVideo";
+import Card from "../special/Card";
+import CardProducts from "../special/CardProducts";
+import Header from "../Header";
+
+
+
+
 
 
 const StartLearning = () => {
@@ -12,10 +21,19 @@ const StartLearning = () => {
 
 
 
+<Outlet></Outlet>
+<div className="flex">
 
-
-
+<Categories></Categories>
 <LearningCard></LearningCard>
+
+
+
+
+
+</div>
+
+
 <LessonVideo></LessonVideo>
 
 

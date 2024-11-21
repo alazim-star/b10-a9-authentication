@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 
-const LessonCard = ({ product }) => {
+const LessonCard = ({ product}) => {
   const {
     id,
     word,

@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
-import Card from "./Card";
+
+import Card from './../special/Card';
 
 
 
 const AllCards = () => {
-const [products,setProducts]=useState([])
+const [coffees,setcoffees]=useState([])
 useEffect(()=>{
 fetch('/japanese_data.json')
 .then(res=>res.json())
-.then(data=>setProducts(data))
+.then(data=>setcoffees(data))
 
 
 
@@ -28,7 +29,7 @@ fetch('/japanese_data.json')
        
         <div className=" grid lg:grid-cols-8 md:grid-cols-5 grid-cols-4">
         {
-    products.map(product=><Card key={product.id} product={product}>
+    coffees.map(coffee=><Card key={coffee.id} coffee={coffee}>
 
 
 

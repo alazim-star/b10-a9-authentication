@@ -1,13 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
-import {createBrowserRouter,Navigate,RouterProvider,} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainLayOut from './Components/MainLayout/MainLayOut';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 import Tutorials from './Pages/Tutorials';
-import ErrorPage from './../ErrorPage.jsx/ErrorPage';
+
 import ViewDetails from './Components/cards/ViewDetails';
 import Login from './Components/Login/Login';
 import AuthProvider from './Components/AuthProvider';
@@ -20,116 +20,122 @@ import Lesson3 from './Components/StartLearning/LessonAll/Lesson3';
 import LessonsCard from './Components/LessonsPage/LessonsCard';
 import UpdateProfile from './Components/UpdateProfile';
 import AboutUs from './Pages/AboutUs';
+import CardProducts from './Components/special/CardProducts';
+import Header from './Components/Header';
+import ErrorPage from './../ErrorPage.jsx/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayOut></MainLayOut>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
+    element: <MainLayOut />,
+    errorElement: <ErrorPage />,
+    children: [
       {
         path: "/",
-        element: <Home></Home>,
-       
-            
+        element: <Home />,
       },
       {
         path: "/profile",
-        element: <PrivateRoute>
-          <Profile></Profile>
-        </PrivateRoute>,
-        
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
       },
-       {
+      {
         path: "/about",
-        element: <AboutUs></AboutUs>,
-        
+        element: <AboutUs />,
       },
       {
         path: "/learning",
-        element: <StartLearning></StartLearning>,
-        
-         
-        
+        element: <StartLearning />,
+        loader: () => fetch('/categories.json'),
+        children: [
+          {
+            path: ":category", 
+            element: <CardProducts />,
+            loader: () => fetch('/product.json'),
+          },
+          {
+            index: true, 
+            element: <CardProducts />,
+            loader: () => fetch('/product.json'),
+          },
+        ],
       },
       {
         path: "/tutorials",
-        element: <PrivateRoute>
-          <Tutorials></Tutorials>
-        </PrivateRoute>,
-        
+        element: (
+          <PrivateRoute>
+            <Tutorials />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/details/:id",
-        element: <PrivateRoute>
-          <ViewDetails></ViewDetails>
-        </PrivateRoute>,
-        loader:async({params})=>{
-          const res=await fetch('/japanese_data.json')
-          const data=await res.json()
- 
-          const singleData=data.find(d=>d.id==params.id)
-          console.log(singleData);
-          return singleData
-        
+        element: (
+          <PrivateRoute>
+            <ViewDetails />
+          </PrivateRoute>
+        ),
+        loader: async ({ params }) => {
+          const res = await fetch('/japanese_data.json');
+          const data = await res.json();
+          return data.find((d) => d.id === params.id);
         },
-        
       },
       {
         path: "/login",
-        element: <Login></Login>,
-        
+        element: <Login />,
       },
       {
         path: "/register",
-        element: <Register></Register>,
+        element: <Register />,
       },
-     
+      {
+        path: "/lessons",
+        element: (
+          <PrivateRoute>
+            <LessonsCard />
+          </PrivateRoute>
+        ),
+      },
       {
         path: "/lesson1",
-        element: <PrivateRoute><Lesson1></Lesson1>
-        </PrivateRoute>,
-        
+        element: (
+          <PrivateRoute>
+            <Lesson1 />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/lesson2",
-        element: <PrivateRoute><Lesson2></Lesson2>
-        </PrivateRoute>,
-        
+        element: (
+          <PrivateRoute>
+            <Lesson2 />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/lesson3",
-        element: <PrivateRoute><Lesson3></Lesson3>
-        </PrivateRoute>,
-        
+        element: (
+          <PrivateRoute>
+            <Lesson3 />
+          </PrivateRoute>
+        ),
       },
-     
-      {
-        path: "/lessons",
-        element: <PrivateRoute>
-          <LessonsCard></LessonsCard>
-        </PrivateRoute>,
-      },
-   
       {
         path: "/updateProfile",
-        element: <UpdateProfile></UpdateProfile>,
+        element: <UpdateProfile />,
       },
-  
-    
-     
-     
     ],
-    
   },
- 
 ]);
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-        <AuthProvider>
-          <RouterProvider router={router} />
-        </AuthProvider>
-  </StrictMode>,
-)
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+  </StrictMode>
+);
