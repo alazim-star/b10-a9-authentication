@@ -8,7 +8,7 @@ import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 import Tutorials from './Pages/Tutorials';
 
-import ViewDetails from './Components/cards/ViewDetails';
+
 import Login from './Components/Login/Login';
 import AuthProvider from './Components/AuthProvider';
 import Register from './Components/Register/Register';
@@ -19,9 +19,8 @@ import StartLearning from './Components/StartLearning/StartLearning';
 import UpdateProfile from './Components/UpdateProfile';
 import AboutUs from './Pages/AboutUs';
 import CardProducts from './Components/special/CardProducts';
-import Header from './Components/Header';
+
 import ErrorPage from './../ErrorPage.jsx/ErrorPage';
-import ShowAllCard from './Components/StartLearning/ShowAllCard';
 import Lesson from './Components/special/Lesson';
 
 const router = createBrowserRouter([
@@ -71,19 +70,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/details/:id",
-        element: (
-          <PrivateRoute>
-            <ViewDetails />
-          </PrivateRoute>
-        ),
-        loader: async ({ params }) => {
-          const res = await fetch('/japanese_data.json');
-          const data = await res.json();
-          return data.find((d) => d.id === params.id);
-        },
-      },
+     
       {
         path: "/login",
         element: <Login />,
@@ -97,10 +84,7 @@ const router = createBrowserRouter([
         path: "/updateProfile",
         element: <UpdateProfile />,
       },
-      {
-        path: "/showAll",
-        element: <ShowAllCard/>,
-      },
+      
       {
         path: "/lessons",
         element: <Lesson/>,
