@@ -1,6 +1,6 @@
 # 🎓 Lingo Bingo – Word Learning Web Application
 
-![Lingo Bingo](../assets/ss.jpg)
+![Lingo Bingo](./src/assets/ss.JPG)
 
 An **interactive word learning platform** where users can explore words, listen to their pronunciation, and understand their usage through engaging modals and word cards.
 
