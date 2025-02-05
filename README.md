@@ -37,8 +37,7 @@ An **interactive word learning platform** where users can explore words, listen 
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://i.ibb.co.com/CKpWjC00/Capture-JPGqs.jpg" width="300" alt="Lingo Bingo Screenshot 1"></td>
-      <td><img src="https://i.ibb.co/Vc154CDr/dsd.jpg" width="300" alt="Lingo Bingo Screenshot 2"></td>
+      <td><img src="https://i.ibb.co.com/4wR0MH9m/dd.jpg" width="300" alt="Lingo Bingo Screenshot 2"></td>
     </tr>
   </table>
 </div>
